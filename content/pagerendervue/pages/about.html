@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+
+    
+    <link rel="preload" href="/etc/felibs/pagerendervue/jquery/jquery.slim.min.js" as="script"><link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" as="script"><link rel="preload" href="/etc/felibs/pagerendervue/bootstrap/js/bootstrap.min.js" as="script">
+    <link rel="preload" href="/etc/felibs/pagerendervue/bootstrap/css/bootstrap.min.css" as="style">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#c0c0c0">
+    <meta name="description">
+    <meta name="keywords">
+    
+    
+
+    <link rel="apple-touch-icon" href="/content/example/assets/images/peregrine-logo.png">
+
+    
+    <meta property="og:title" content="pagerenderer-vue About"/>
+    
+    
+    
+    
+    <meta property="og:url" content="/content/pagerendervue/pages/about.html"/>
+
+    <title>pagerenderer-vue About | </title>
+    <link rel="canonical" href="/content/pagerendervue/pages/about.html"/>
+    
+
+    <link rel="manifest" href="/content/pagerendervue/pages/manifest.json">
+    <script>$peregrineSiteRoot = "/content/pagerendervue/pages"</script>
+    
+    <!-- trackers -->
+
+    <style>
+        .loadedHide {
+            display: none;
+        }
+
+        [v-cloak] {
+            display: none;
+        }
+
+        .whilePeregrineLoads {
+            display: none;
+
+        }
+
+        .whilePeregrineLoads[v-cloak] {
+            display: block;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            margin-top: -50px;
+            margin-left: -100px;
+        }
+</style>
+
+    <script type="text/javascript">
+        if(/MSIE \d|Trident.*rv:/.test(navigator.userAgent)) {
+            document.write('<script src="/etc/felibs/pagerendervue/conditional-js/shim.min.js"><\/script>');
+        }
+    </script>
+
+    <script id="perPage" data-per-path="/content/pagerendervue/pages/about.html" type="application/json">{"absOgImage":"","brand":null,"canonicalUrl":"/content/pagerendervue/pages/about.html","children":[{"experiences":null,"children":[{"experiences":null,"text":"peregrine-cms is a basic headless, api first cms built on top of apache sling and apache jackrabbit","component":"pagerendervue-components-base","path":"/jcr:content/content/text1"},{"experiences":null,"text":"index link: <a href='/content/pagerendervue/pages/index.html'>index</a>","component":"pagerendervue-components-base","path":"/jcr:content/content/text2"}],"component":"pagerendervue-structure-container","path":"/jcr:content/content"}],"component":"pagerendervue-structure-page","dataDefault":null,"dataFrom":null,"description":null,"domains":null,"experiences":null,"fallbackDomain":"http://localhost:8080","fromTemplate":true,"loaders":null,"metaRobots":"","metanames":[],"metaproperties":[],"ogDescription":null,"ogTitle":"pagerenderer-vue About","pagePath":"/content/pagerendervue/pages/about","path":"/jcr:content","prefetchDNS":null,"primaryDomain":"","renderedTags":[],"siteCSS":["/etc/felibs/pagerendervue/bootstrap/css/bootstrap.min.css"],"siteJS":["/etc/felibs/pagerendervue/jquery/jquery.slim.min.js","https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js","/etc/felibs/pagerendervue/bootstrap/js/bootstrap.min.js"],"siteRoot":"/content/pagerendervue/pages","suffixToParameter":null,"tags":[],"template":"/content/pagerendervue/templates","title":"pagerenderer-vue About"}</script>
+
+    <style>
+        #peregrine-app [data-per-inline] {
+            white-space: pre-wrap;
+        }
+    </style>
+</head>
+
+
+<body>
+
+<!-- trackers -->
+<div id="peregrine-app">
+    <span v-cloak>
+        <component v-bind:is="page.component" v-bind:model="page"></component>
+    </span>
+    <span v-cloak class="whilePeregrineLoads">
+        loading: pagerenderer-vue About 
+    </span>
+</div>
+
+
+    <script type="text/javascript" src="/etc/felibs/pagerendervue/jquery/jquery.slim.min.js"></script>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+
+    <script type="text/javascript" src="/etc/felibs/pagerendervue/bootstrap/js/bootstrap.min.js"></script>
+
+
+<!-- js includes required for this renderer -->
+
+<script src="/etc/felibs/pagerendervue/axios/axios.min.js"></script>
+<script src="/etc/felibs/pagerendervue/vue/vue.min.js"></script>
+
+<script src="/etc/felibs/pagerendervue.js"></script>
+
+<script>
+    $peregrineApp.loadComponent('pagerendervue-components-placeholder')
+</script>
+
+<link rel="stylesheet" href="/etc/felibs/pagerendervue/bootstrap/css/bootstrap.min.css" type="text/css">
+
+<script>
+    var $perView = { view: 'preview' };
+    $peregrineApp.registerView($perView)
+    $peregrineApp.loadContentFrom("perPage", "/content/pagerendervue/pages/about.html", true)
+</script>
+<script>
+    var enableServiceWorker = $peregrineApp.isPublicFacingSite();
+    if(enableServiceWorker) {
+        if (!$peregrineApp.isAuthorMode()) {
+            if ('serviceWorker' in navigator) {
+                window.addEventListener('load', function () {
+                    navigator.serviceWorker.register('/serviceworker.js').then(function (registration) {
+                        // Registration was successful
+                        console.log('ServiceWorker registration successful with scope: ', registration.scope);
+                    }, function (err) {
+                        // registration failed :(
+                        console.log('ServiceWorker registration failed: ', err);
+                    });
+                });
+            }
+        }
+    }
+</script>
+
+</body>
+</html>

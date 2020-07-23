@@ -1,0 +1,30 @@
+{
+  "short_name": "kestrel1",
+  "name": "kestrel1 site",
+  "display": "fullscreen",
+  "theme_color": "#1a202c",
+  "background_color": "#ffffff",
+  "icons": [
+    {
+      "src": "/content/kestrel1/assets/icons/launcher-icon-1x.png",
+      "type": "image/png",
+      "sizes": "48x48"
+    },
+    {
+      "src": "/content/kestrel1/assets/icons/launcher-icon-2x.png",
+      "type": "image/png",
+      "sizes": "96x96"
+    },
+    {
+      "src": "/content/kestrel1/assets/icons/launcher-icon-4x.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "/content/kestrel1/assets/icons/launcher-icon-4x.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "/index.html"
+}
